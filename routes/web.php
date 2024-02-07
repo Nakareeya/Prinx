@@ -41,7 +41,7 @@ Route::resource('/my-controller4', MyController::class);
 
 
 Route::get('/', function () {
-    return view('welcome'); // welcome.blade.php
+    return view('titles.welcome'); // welcome.blade.php
 });
 
 // use Illuminate\Http\Request;

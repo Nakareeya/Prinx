@@ -159,6 +159,9 @@
                         <i class="fas fa-th-large"></i>
                     </a>
                 </li>
+                <button class="btn logout" type="button" data-widget="/logout">
+                    <a href="/logout">logout</a>
+                </button>
             </ul>
         </nav>
         <!-- /.navbar -->
