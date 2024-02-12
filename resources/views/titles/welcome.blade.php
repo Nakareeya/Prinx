@@ -103,6 +103,7 @@
 
         }
         */
+        console.log(document.getElementById('myh1').innerHTML)
     </script>
 </body>
 
