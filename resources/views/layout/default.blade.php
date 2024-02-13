@@ -12,7 +12,7 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="{{ url('assets/plugins/fontawesome-free/css/all.min.css') }}">
     <!-- SweetAlert2 -->
-    <link rel="stylesheet" href="{{ url('plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css') }}">
+    <link rel="stylesheet" href="{{ url('assets/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css') }}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ url('assets/dist/css/adminlte.min.css') }}">
 </head>
@@ -161,9 +161,6 @@
                         <i class="fas fa-th-large"></i>
                     </a>
                 </li>
-                <button class="btn logout" type="button" data-widget="/logout">
-                    <a href="/logout">logout</a>
-                </button>
             </ul>
         </nav>
         <!-- /.navbar -->
@@ -186,7 +183,7 @@
                             alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Alexander Pierce</a>
+                        <a href="#" class="d-block">{{ Auth::user()->name }}</a>
                     </div>
                 </div>
 
@@ -284,7 +281,7 @@
     <!-- Bootstrap 4 -->
     <script src="{{ url('assets/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <!-- SweetAlert2 -->
-    <script src="{{ url('plugins/sweetalert2/sweetalert2.min.js') }}"></script>
+    <script src="{{ url('assets/plugins/sweetalert2/sweetalert2.min.js') }}"></script>
     <!-- AdminLTE App -->
     <script src="{{ url('assets/dist/js/adminlte.min.js') }}"></script>
     @yield('js')
